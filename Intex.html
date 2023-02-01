@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content "IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header class="navigation">
+	<nav>
+	<h1>
+	<a><font color= "black">
+		<center>Bienvenue</center>
+	</font></a>
+		<ul>
+			<li>
+				<section class="produits_listes">
+					<form action=""class="produit">
+						<div class="image_produit">
+							<img src="/Users/boussouralisa/Desktop/api/templates/image/accueil.png" height= "50px">
+						</div>
+						<div class="content">
+							<center><h4 class="name">Accueil</h4></center>
+			</li>
+					</form>
+
+			<li>
+				<a href="file:///Users/boussouralisa/Desktop/api/templates/AjoutsPlats.html">
+				<section class="produits_listes">
+					<form action=""class="produit">
+						<div class="image_produit">
+							<img src="/Users/boussouralisa/Desktop/api/templates/image/ajouts des plats.png" height= "50px">
+						</div>
+						<div class="content">
+							<center><h4 class="name">Ajouts des plats</h4></center>
+				</link>
+			</li>
+					</form>
+
+			<li>
+				<a href="https://www.federationdesdiabetiques.org/diabete/recettes" target= "_BLANK">
+				<section class="produits_listes">
+					<form action=""class="produit">
+						<div class="image_produit">
+							<img src="/Users/boussouralisa/Desktop/api/templates/image/idées recettes.png" height= "50px">
+						</div>
+						<div class="content">
+							<center><h4 class="name">Idées Recettes</h4></center>
+				</link>
+			</li>
+					</form>
+
+
+			<li>
+				<a href="/Users/boussouralisa/Desktop/api/templates/contact.html">
+				<section class="produits_listes">
+					<form action=""class="produit">
+						<div class="image_produit">
+							<img src="/Users/boussouralisa/Desktop/api/templates/image/contacts.png" height= "50px">
+						</div>
+						<div class="content">
+							<center><h4 class="name">Contacts</h4></center>
+					</form>
+			</li>
+			
+			<li>
+				<a href="/Users/boussouralisa/Desktop/api/templates/panier.html">
+				<section class="produits_listes">
+					<form action=""class="produit">
+						<div class="image_produit">
+							<img src="/Users/boussouralisa/Desktop/api/templates/image/panier.png" height= "50px">
+						</div>
+						<div class="content">
+							<center><h4 class="name">Panier</h4></center>
+					</form>
+			</li>
+			<br> </br>
+			<br> </br>
+
+	<style type="text/css">
+		
+
+p{
+	font-size: .65em;
+	color: #004a39;
+}
+
+.navigation {
+
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+nav ul {
+	display: inline-block;
+	list-style-type: none;
+
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px
+}
+/*arriere plan*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F5F5DC;
+}
+/*Personalisation du panier
+.link {
+    margin: 20px;
+    width: fit-content;
+    position: relative;
+    text-decoration: 0;
+    background-color: #37a6ff;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+*/
+}
+/*Personalisation de la notification du panier*/
+span {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+}
+
+/*Placement des plats*/
+ .produits_listes{
+ 	margin: 80px auto;
+ 	position: relative;
+ 	width: 70%;
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+ 	grid-gap:20px;
+ }
+/*Dimension arrière plan des photos des platse*/
+.produit{
+	background-color:#fff;
+	width: 100%;
+	box-shadow: 0 0 5px rgba(0,0,0,0,3); 
+	border-radius: 6px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+/*Animation*/
+.produit:hover {
+	transform: scale(1.1);
+}
+
+/*Dimension image*/
+.image_produit img{
+	height: 150px;
+	width: 100%;
+	object-fit: cover;
+	padding: 20px;
+
+}
+/*Dimension du panier, Couleur du panier*/
+.id_produit {
+	text-align: center;
+	text-decoration: 0;
+	background-color: #37a6ff;
+	letter-spacing: 3px;
+	color: #fff;
+	padding: 10 px 10%;
+	border-radius: 6px;
+}
+.panier {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.panier img{
+	width: 40px;
+	padding: 8px 0;
+}
+
+.panier section {
+	width: 70%;
+	background-color: #fff;
+	padding: 10 px;
+	border-radius: 6 px;
+}
+/*Tableau*/
+table{
+	border-collapse: collapse;
+	width: 100%;
+	letter-spacing: 2px;
+	font-size: 13px;
+}
+th{
+	padding: 10px 0;
+	font-weight: 400;
+
+}
+td{
+	border-top: 0.5px solid #999;
+}
+
+tr{
+	border-bottom: 0.5px solid #999;
+}
+
+	</style>
+
+</body>
+</html>
